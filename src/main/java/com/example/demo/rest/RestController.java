@@ -19,6 +19,6 @@ public class RestController {
     ///exposed endpoint
     @GetMapping("/health")
     public String getHealth(){
-        return "Coding is Life";
+        return "Health is Life";
     }
 }
