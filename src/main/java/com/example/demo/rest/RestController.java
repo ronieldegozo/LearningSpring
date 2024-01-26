@@ -7,7 +7,7 @@ public class RestController {
 
     @GetMapping("/rouge")
     public String helloWorld(){
-        return "Hello World! Rougeniel";
+        return "Hello World! Rougeniel Love";
     }
 
     ///exposed endpoint
