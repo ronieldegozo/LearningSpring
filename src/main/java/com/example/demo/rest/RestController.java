@@ -13,7 +13,7 @@ public class RestController {
     ///exposed endpoint
     @GetMapping("/codinglife")
     public String getDailyTask(){
-        return "Coding is Life";
+        return "Coding is Life Forever";
     }
 
     ///exposed endpoint
