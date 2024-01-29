@@ -15,10 +15,4 @@ public class RestController {
     public String getDailyTask(){
         return "Coding is Life Forever";
     }
-
-    ///exposed endpoint
-    @GetMapping("/health")
-    public String getHealth(){
-        return "Health is Life";
-    }
 }
