@@ -3,6 +3,7 @@ package com.example.demo.rest;
 
 import com.example.demo.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,11 +14,17 @@ public class DemoController {
     //define private field for dependency
     private Coach myCoach;
 
-    //define constructor
+    //Setter Injection
     @Autowired
-    public DemoController (Coach coach){
+    public void setCoach(@Qualifier("volleyBallCoach") Coach coach){
         myCoach = coach;
     }
+
+    //define constructor
+//    @Autowired
+//    public DemoController (Coach coach){
+//        myCoach = coach;
+//    }
 
     @GetMapping("/dailywork")
     public String getDailyWork(){
