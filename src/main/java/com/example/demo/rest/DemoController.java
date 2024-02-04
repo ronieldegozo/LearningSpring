@@ -17,6 +17,7 @@ public class DemoController {
     //Setter Injection
     @Autowired
     public void setCoach(@Qualifier("volleyBallCoach") Coach coach){
+        System.out.println("In Constructor Controller: " + getClass().getSimpleName());
         myCoach = coach;
     }
 
